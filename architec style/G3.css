@@ -194,3 +194,121 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Features you will
+love & enjoy */
+.enjoy-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.enjoy-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.enjoy-left {
+  flex: 1 1 600px;
+}
+
+.enjoy-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.orange-bar {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: #f27a0c;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.enjoy-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.feature-box {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.feature-box h4 {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.feature-box p {
+  font-size: 13px;
+  color: #444;
+}
+
+.enjoy-right {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-color: #f27a0c;
+  padding: 20px 25px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.experience-badge h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.experience-badge p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .enjoy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enjoy-right {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .experience-badge {
+    left: 20px;
+    bottom: -15px;
+  }
+}
+
