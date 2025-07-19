@@ -232,12 +232,12 @@ love & enjoy */
 
 .enjoy-description {
   font-size: 14px;
-  color: #555;
+  color:black;
   margin-bottom: 25px;
 }
 
 .feature-box {
-  background-color: #f9f9f9;
+  background-color:white;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
@@ -252,7 +252,7 @@ love & enjoy */
 
 .feature-box p {
   font-size: 13px;
-  color: #444;
+  color: rgb(73, 69, 69);
 }
 
 .enjoy-right {
@@ -309,6 +309,170 @@ love & enjoy */
   .experience-badge {
     left: 20px;
     bottom: -15px;
+  }
+}
+/*  footer  */
+
+/* Base styles for all devices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+/* . */
+.subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  /* text-align: center;            Center the text */
+  max-width: 600px;              /* Keep readable width */
+  margin: 0 auto 30px auto;      /* Center block with margin */
+  padding: 0 15px;               /* Small padding for mobile spacing */
+}
+
+
+/* .subtitle {
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* Facts box container */
+.facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fact-box {
+  border: 1px solid orange;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  background-color: #fff8f0;
+}
+
+.fact-box img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.fact-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.fact-box p {
+  font-size: 0.95em;
+  color: #444;
+}
+
+.fact-box:hover {
+  transform: scale(1.05);
+}
+
+/* Sponsors section */
+.sponsors-section {
+  margin-top: 60px;
+}
+
+.sponsors-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sponsors-logos img {
+  width: 50px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.sponsors-logos img:hover {
+  opacity: 1;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Small devices (phones under 600px) */
+@media (max-width: 600px) {
+  .fact-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .sponsors-logos {
+    gap: 20px;
+  }
+
+  .sponsors-logos img {
+    width: 40px;
+  }
+}
+
+/* Medium devices (tablets 601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .fact-box {
+    width: 45%;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  .sponsors-logos img {
+    width: 45px;
+  }
+}
+
+/* Large devices (laptops/desktops 901px - 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .fact-box {
+    width: 22%;
+  }
+
+  .sponsors-logos img {
+    width: 48px;
+  }
+}
+
+/* Extra large devices (1201px and up) */
+@media (min-width: 1201px) {
+  .fact-box {
+    width: 200px;
+  }
+
+  .sponsors-logos img {
+    width: 50px;
   }
 }
 
